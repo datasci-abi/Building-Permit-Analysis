@@ -15,7 +15,6 @@ LIMIT 10;
 
 💤 Bottom 5 States by Permits Issued
 sql
-Copy code
 SELECT State, Total
 FROM permits
 ORDER BY Total ASC
@@ -24,7 +23,6 @@ LIMIT 5;
 
 📊 Share of Total National Permits
 sql
-Copy code
 SELECT State,
        ROUND(Total * 100.0 / (SELECT SUM(Total) FROM permits), 2) AS Share_Pct
 FROM permits
@@ -34,7 +32,6 @@ LIMIT 10;
 
 🧮 Total Permits Nationwide
 sql
-Copy code
 SELECT SUM(Total) AS national_total FROM permits;
 🧾 Gives the total number of units permitted across all U.S. states in March 2025 — useful for framing the rest of the analysis.
 
