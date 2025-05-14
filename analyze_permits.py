@@ -60,4 +60,3 @@ df.to_csv("march_2025_permit_insights.csv", index=False)
 print("\n✅ Data exported to 'march_2025_permit_insights.csv'")
 
 
-git remote add origin https://github.com/datasci-abi/building-permit-analysis.git
